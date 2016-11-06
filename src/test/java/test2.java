@@ -14,42 +14,42 @@ public class test2 {
 
     public static void main(String[] args) {
 
-        Sauna sauna1= new Sauna("Купель здоровья",250,8,4);
-        sauna1.setAddress("ул. Пограничная, 12А");
-
-        Factoty.getInstance().getSaunaDAO().createSauna(sauna1);
-
-        District xoldDistrict =new District("Холодногорский");
-
+//        Sauna sauna1= new Sauna("Купель здоровья",250,8,4);
+//        sauna1.setAddress("ул. Пограничная, 12А");
+//
+//        Factoty.getInstance().getSaunaDAO().createSauna(sauna1);
+//
+//        District xoldDistrict =new District("Холодногорский");
+//
 //        sauna1.setDistrict(xoldDistrict); // программа еще не знает что сауна в дисткректе
-
-        xoldDistrict.setSauna(sauna1);
-
-
-        ServiceType type1 =new ServiceType("Руская");
-
-
-        List<ServiceType> typeBySauna1 =  new ArrayList<>();
-        typeBySauna1.add(type1);
-
-        sauna1.setType(typeBySauna1);
-
-        List<Sauna> saunaByType1 =  new ArrayList<>();
-        saunaByType1.add(sauna1);
-
-        type1.setSaunas(saunaByType1);
-
-        Phone phone1 = new Phone("050-551-2555");
-        phone1.setSauna(sauna1);
-        Phone phone2 = new Phone("097-653-5455");
-        phone2.setSauna(sauna1);
-
-        List<Phone> phonesBySauna1 = new ArrayList<>();
-        phonesBySauna1.add(phone1);
-        phonesBySauna1.add(phone2);
-
-        sauna1.setPhones(phonesBySauna1);
-
+//
+//        xoldDistrict.setSauna(sauna1);
+//
+//
+//        ServiceType type1 =new ServiceType("Руская");
+//
+//
+//        List<ServiceType> typeBySauna1 =  new ArrayList<>();
+//        typeBySauna1.add(type1);
+//
+//        sauna1.setType(typeBySauna1);
+//
+//        List<Sauna> saunaByType1 =  new ArrayList<>();
+//        saunaByType1.add(sauna1);
+//
+//        type1.setSaunas(saunaByType1);
+//
+//        Phone phone1 = new Phone("050-551-2555");
+//        phone1.setSauna(sauna1);
+//        Phone phone2 = new Phone("097-653-5455");
+//        phone2.setSauna(sauna1);
+//
+//        List<Phone> phonesBySauna1 = new ArrayList<>();
+//        phonesBySauna1.add(phone1);
+//        phonesBySauna1.add(phone2);
+//
+//        sauna1.setPhones(phonesBySauna1);
+//
 //        System.out.println(sauna1.getName());
 //        System.out.println(sauna1.getPrice());
 //        System.out.println(sauna1.getCapacity());
@@ -74,10 +74,10 @@ public class test2 {
 
 
 //
-        Factoty.getInstance().getTypeDAO().createServiceType(type1);
-        Factoty.getInstance().getDistrictDAO().createDistrict(xoldDistrict);    // но в БД мы уже запердолили
-        Factoty.getInstance().getPhoneDAO().createPhone(phone1);
-        Factoty.getInstance().getPhoneDAO().createPhone(phone2);
+//        Factoty.getInstance().getTypeDAO().createServiceType(type1);
+//        Factoty.getInstance().getDistrictDAO().createDistrict(xoldDistrict);    // но в БД мы уже запердолили
+//        Factoty.getInstance().getPhoneDAO().createPhone(phone1);
+//        Factoty.getInstance().getPhoneDAO().createPhone(phone2);
 
 
     }

@@ -8,9 +8,9 @@ import com.entity.ServiceType;
  */
 public class test3 {
 
-    public static void main(String[] args) {
-        ServiceType newService = new ServiceType("Финская");
-
-        Factoty.getInstance().getTypeDAO().createServiceType(newService);
-    }
+//    public static void main(String[] args) {
+//        ServiceType newService = new ServiceType("Финская");
+//
+//        Factoty.getInstance().getTypeDAO().createServiceType(newService);
+//    }
 }
